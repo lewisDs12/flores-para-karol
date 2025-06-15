@@ -1,0 +1,24 @@
+{
+  "name": "flowers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass style.scss:styles.css",
+    "sass:watch": "sass --watch style.scss:styles.css",
+    "start": "http-server -p 3000 -c-1",
+    "build": "sass style.scss:styles.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "http-server": "^14.1.1",
+    "sass": "^1.71.1"
+  }
+}
